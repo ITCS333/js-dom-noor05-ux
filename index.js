@@ -3,6 +3,8 @@
  */
 function changeHeadingText() {
   // TODO: Implement this function
+  let newtext = document.getElementById('main-heading');
+  newtext.textContent ='DOM Manipulation Challenge';
 }
 
 /**
@@ -10,6 +12,8 @@ function changeHeadingText() {
  */
 function changeBoxColor() {
   // TODO: Implement this function
+  let boxColor =document.getElementById('box-to-modify');
+  boxColor.style.backgroundColor = 'lightblue';
 }
 
 /**
@@ -17,6 +21,11 @@ function changeBoxColor() {
  */
 function addNewItem() {
   // TODO: Implement this function
+  let newitem = document.createElement('li');
+  newitem.textContent='New Item';
+
+  let list = document.getElementById('item-list');
+  list.appendChild(newitem);
 }
 
 /**
@@ -24,13 +33,17 @@ function addNewItem() {
  */
 function highlightParagraph() {
   // TODO: Implement this function
+let newclass = document.querySelector('.content-para');
+newclass.classList.add('highlight');
 }
 
 /**
  * Selects the element with the id 'to-be-removed' and removes it from the DOM.
  */
 function removeElement() {
-  // TODO: Implement this function
+  // TODO: Implement this function 
+ let item = document.querySelector('#to-be-removed');
+ item.remove();
 }
 
 
